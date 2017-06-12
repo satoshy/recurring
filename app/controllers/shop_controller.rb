@@ -1,5 +1,6 @@
 class ShopController < ApplicationController
-  
+  theme 'smarty'
+
   before_filter :find_categories
   before_filter :find_cart
   

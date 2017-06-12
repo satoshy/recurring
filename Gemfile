@@ -14,7 +14,7 @@ gem "jquery-ui-rails"
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
-  
+gem 'themes_on_rails'
 # gem 'elasticsearch-model'
 # gem 'elasticsearch-rails'
 # gem 'searchkick'

@@ -23,6 +23,30 @@
           <%= yield %>
         </div>
       </div>
+    <%= render "shop/footer" %>
   </div>
-</body>
+  <% if Rails.env.production? %>
+    <script type='text/javascript'>
+    window.__lo_site_id = 39251;
+    (function() {
+      var wa = document.createElement('script'); wa.type = 'text/javascript'; wa.async = true;
+      wa.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://cdn') + '.luckyorange.com/w.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(wa, s);
+    })();
+    </script>
+    <% end %>
+    
+    <div class="modal fade" id="myModal" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div id="modal-content">
+        </div>
+      </div>
+    </div>
+  </body>
+  
+  <% if Rails.env.development? || (current_user and current_user.email == "admin@247officesupply.com") %>
+    <% if params[:show_console] %>
+      <%= console %>
+    <% end %>
+  <% end %>
 </html>

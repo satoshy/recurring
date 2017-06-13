@@ -13,8 +13,7 @@
 <body class="florida" data-no-turbolink="<%= params[:controller] == 'shop' && ['search', 'category'].include?(params[:action]) %>">
   <div id="main" class="container" >
       <header id="header" data-hook>
-        <%= render "layouts/header" %>
-
+        <%= render "shop/header" %>
             <div id="flashes">
               <%= bootstrap_flash %>
             </div>

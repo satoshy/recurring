@@ -34,6 +34,8 @@ development:
   adapter: <%= SECRET["DATABASE"]["DEV_ENGINE"] %>
   host: <%= SECRET["DATABASE"]["DEV_HOST"] %>
   database: <%= SECRET["DATABASE"]["DEV_DB"] %>
+  username: satoshy
+  password: 18satoshy
 
 # production:
 #   <<: *default

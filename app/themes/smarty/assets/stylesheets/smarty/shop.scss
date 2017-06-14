@@ -52,11 +52,15 @@ body.florida {
 				}
 				#MainSearchBox {
 					padding-top: 15px;
-					padding-bottom: 15px;
+					height: 50px;
 					.input-group {
 						width: 100%;
 						form#searchBox {
 							display: inherit;
+							div.input-group-btn .btn {
+								height: 34px;
+								width: 43.67px;
+							}
 						}
 					}
 				}

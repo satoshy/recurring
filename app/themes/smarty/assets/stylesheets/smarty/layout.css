@@ -49,18 +49,6 @@
 
 /** Globals
  **************************************************************** **/
-html, body {
-	height:100%;
-}
-body {
-	color:#666;
-	background-color:#fff;
-	font-family:'Open Sans',Arial,Helvetica,sans-serif;
-	-webkit-font-smoothing: antialiased;
-
-	font-size:14px; line-height:1.5;
-	margin:0; padding:0;
-}
 /* example usage: index-onepage-youtube.html */
 body.has-image-bg section,
 body.has-video-bg section {

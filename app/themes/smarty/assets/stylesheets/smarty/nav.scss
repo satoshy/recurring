@@ -1,9 +1,6 @@
 html, body {
   height: 100%;
 }
-body {
-  padding: 50px 0 0 0;
-}
 
 body > .navmenu {
 	width: 200px;
@@ -38,9 +35,6 @@ body > .navmenu {
 }
 
 @media (min-width: 768px) {
-  body {
-    padding: 0 0 0 200px;
-  }
 	.navbar-fixed-bottom {
 		margin-top: 20px;
 		padding: 0 0 0 200px;

@@ -37,27 +37,6 @@
 	window.width = jQuery(window).width();
 
 	/* Init */
-	jQuery(window).ready(function () {
-		jQuery.browserDetect();
-
-		// Load Bootstrap JS
-		loadScript(plugin_path + 'bootstrap/js/bootstrap.min.js', function() {
-
-			Init(false);
-
-		});
-
-
-		/* --- */
-		if(jQuery("html").hasClass("chrome") && jQuery("body").hasClass("smoothscroll") && navigator.platform.indexOf('Mac') < 0) {
-
-			loadScript(plugin_path + 'smoothscroll.js', function() {
-				jQuery.smoothScroll();
-			});
-
-		}
-		/* --- */
-	});
 
 
 /** Init
@@ -837,9 +816,7 @@
 
 		if(_container.length > 0) {
 
-			loadScript(plugin_path + 'owl-carousel/owl.carousel.min.js', function() {
-
-				_container.each(function() {
+			_container.each(function() {
 
 					var slider 		= jQuery(this);
 					var options 	= slider.attr('data-plugin-options');
@@ -982,8 +959,6 @@
 					}
 
 				});
-
-			});
 		}
 
 	}

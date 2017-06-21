@@ -1,0 +1,49 @@
+<!-- ITEM -->
+<li class="col-lg-2 col-sm-4">
+
+	<div class="shop-item">
+
+		<div class="thumbnail noborder nopadding">
+			<!-- product image(s) -->
+			<div class="shop-item-image">
+				<%= image_tag "tn450.png", :class => "media-object" %>
+			</div>
+			<!-- /product image(s) -->
+
+			<!-- hover buttons -->
+			<div class="shop-option-over">
+					<div class="shop-item-buttons text-center">
+					  <%= link_to add_to_cart_path(@cart, :item_id => item.id, quantity: 1), :class => "btn btn-default", :remote => true do %>
+					    <i class="fa fa-cart-plus size-18"></i>
+					  <% end %>
+					</div>
+			</div>
+			<!-- /hover buttons -->
+
+		</div>
+		
+		<div class="shop-item-summary text-center">
+			<h2 class="size-14"><%= item.name %></h2>
+			
+			<!-- rating -->
+			<div class="shop-item-rating-line">
+				<div class="rating rating-4 size-11"><!-- rating-0 ... rating-5 --></div>
+			</div>
+			<!-- /rating -->
+
+			<!-- price -->
+			<div class="shop-item-price">
+				<% if current_user and current_user.has_account and item.actual_price(current_user.account.id).to_f <= item.price.to_f %>
+					<h5><span class="text-danger"><strong><del><%= number_to_currency(item.price) %></del></strong></span></h5>
+					<h4><span class="text-default"><strong><%= number_to_currency(item.actual_price(current_user.account.id)) %></strong></span><h4>
+					<% else %>
+					<h4><span class="text-default"><%= number_to_currency(item.price) %></span><h4>
+				<% end %>
+			</div>
+			<!-- /price -->
+		</div>
+
+	</div>
+
+</li>
+<!-- /ITEM -->

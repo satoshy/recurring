@@ -3207,9 +3207,6 @@ section.dark h2.owl-featured {
 /* Font Icons */
 @font-face {
 	font-family: 'font-icons';
-	src:url('../fonts/font-icons.eot');
-	src:url('../fonts/font-icons.eot') format('embedded-opentype'),
-		url('../fonts/font-icons.woff') format('woff'),
 		url('../fonts/font-icons.ttf') format('truetype'),
 		url('../fonts/font-icons.svg') format('svg');
 	font-weight: normal;

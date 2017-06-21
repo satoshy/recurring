@@ -66,6 +66,30 @@
 	Fix for owl-carousel or flexslider 
 	on responsive 
 */
+.shop-item {
+    width: 180px;
+}
+
+.media-object {
+	height: 200px !important;
+	width: 140px !important;
+}
+
+.featured-items {
+	.col-md-2 {
+		padding: 0;
+	}
+	.panel-heading {
+		min-height: 125px;
+	}
+/*	.panel-body {
+		height: 150px;
+	}*/
+	.panel-footer {
+		height: 50px;
+	}
+}
+
 @media only screen and (max-width: 769px) {
 	ul.shop-item-list>li {
 		width:49%;
@@ -146,14 +170,14 @@ div.shop-item>.thumbnail {
 		border-color:#444 !important;
 	}
 
-	div.shop-item>.thumbnail>a.shop-item-image>img {
+	div.shop-item>.thumbnail>img {
 		-webkit-border-radius: 3px;
 		   -moz-border-radius: 3px;
 				border-radius: 3px;
 	}
 
 	/* double image transition effect */
-	div.shop-item>.thumbnail>a.shop-item-image {
+	div.shop-item>.thumbnail>img {
 		display:block;
 		position:relative;
 	}
@@ -171,12 +195,12 @@ div.shop-item>.thumbnail {
 				transition: all .500s; 
 	}
 
-	div.shop-item>.thumbnail:hover>a.shop-item-image>img:last-child {
+	div.shop-item>.thumbnail:hover>img:last-child {
 		opacity:1;
 		filter: alpha(opacity=100);
 	}
 
-	div.shop-item>.thumbnail>a.shop-item-image>img:first-child {
+	div.shop-item>.thumbnail>img:first-child {
 		position:relative;
 		opacity:1;
 		filter: alpha(opacity=100);
